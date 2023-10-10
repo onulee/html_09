@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>집밥을 특별하게, 쿡킷</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/notice.css">
 	</head>
 	<body>
 		<nav id="top">
@@ -41,62 +42,45 @@
 			</div>
 		</header>
 		<section>
-			<h1 class="title">로그인</h1>
-			<article>
-				<div class="tab_rad_menu">
-					<ul>
-						<li><span>회원 로그인</span></li>
-						<li>비회원 주문조회</li>
-					</ul>
-				</div>
-				<div class="login_frm">
-					<form action="#" method="post" name="lognFrm">
-						<table>
-							<tr>
-								<td>
-									<input type="text" name="id" placeholder="CJ ONE 통합아이디 6~12자"
-						 maxlength="21">
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="password" name="pw" placeholder="비밀번호 영문,특수문자,숫자혼합 8~12자"
-						 maxlength="21">
-								</td>
-							</tr>
-							<tr class="desc_wrap">
-								<td>
-									<div>
-										<input type="checkbox" id="lg_id_save" name="lg_id_save"
-										value="y">
-										<label for="lg_id_save"><span>아이디 저장</span> </label> 
-									</div>
-									<div>아이디 찾기</div>
-									<div>비밀번호 찾기</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<button class="login_btn">로그인</button>
-								</td>
-							</tr>
-							
-						</table>
-					</form>
-					<div class="easy_login">
-						<ul>
-							<li class="easy_p"><a href="#"></a></li>
-							<li class="easy_k"><a href="#"></a></li>
-							<li class="easy_n"><a href="#"></a></li>
-							<li class="easy_f"><a href="#"></a></li>
-						</ul>
+			<h1 id="tit" class="title" >고객행복센터</h1>
+			<!-- 검색창 영역  -->
+			<div class="f_search">
+				<h2>NOTICE 검색</h2>
+				<div class="box_search">
+					<div class="sch_wrap">
+						<form action="#" method="get">
+							<input type="text" class="txt" id="fn_txt_srch"
+							placeholder="검색어를 입력해주세요" name="keyWord" required>
+							<button class="ico" type="button"></button>
+							<button class="btn_srch" type="button"></button>
+						</form>
 					</div>
-				<div class="box_induce">
-					<h4>CJ ONE 통합회원이 아니신가요?</h4>
-					<p>CJ ONE 통합회원으로 가입하시면 CJ제일제당의 다양한 서비스(COOKIT, CJ THE MARKET, CJ제일제당 홈페이지)를 이용하실 수 있습니다.</p>
-					<div>CJ ONE 통합회원 신규가입하기</div>
 				</div>
-			</article>
+			</div>
+			<!-- 게시판 영역 -->
+			<div class="notice_conts">
+				<div class="tb_row">
+					<table>
+						<tr>
+							<th>번호</th>
+							<th>제목</th>
+							<th>작성자</th>
+							<th>작성일</th>
+							<th>조회수</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>CJONE포인트,기프트카드사용 일시중단 안내[22.11.22(화) 02:00~07:00]</td>
+							<td>관리자</td>
+							<td>2022-11-21</td>
+							<td>100</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			
+			
 		</section>
 		<a href="#top"><div class="top_btn"></div></a>
 		
